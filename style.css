@@ -1,15 +1,19 @@
 
 
-*{
+*,*::before, *::after {
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
 }
 
+html{
+    background-color: black;
+}
 body{
-    margin: 0 auto;
-    height: 800px;
-    background-color: grey;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #f5f6fb;
 }
 img {
     width: 200px;
@@ -20,12 +24,21 @@ h1, h2{
 }
 h1{
     font-size: xxx-large;
+    color: #2d4767;
 }
 h2{
     font-size: x-large;
+    border-bottom: 3px solid #2d4767;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+h3{
+    margin-left: 2rem;
+    text-align: center;
 }
 p{
     font-family: 'Open Sans', sans-serif;
+    color: #49423e;
 }
 /* header section */
 header{
@@ -34,6 +47,28 @@ header{
 .info{
     margin-left: 15px;
 }
+
+/* Main Section */
+main{
+    margin: 1.5rem;
+    background-color: #f0f1f3;
+}
+/* Figure Section */
+.figure{
+    margin-left: 1.2rem;
+}
+.figure img{
+    margin: .5rem;
+    height: 4rem;
+    width: 4rem;
+}
+/* Section*/
+.section{
+
+    margin-left: 1.2rem;
+}
+
+
 /* for tablet */
 @media only screen and (max-width: 640px){
     .info{
@@ -43,6 +78,16 @@ header{
     .info-img{
         display: block;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .section{
+        display: block;
+        margin-top: 1.2rem;
+    }
+    .figure{
+        display: block;
     }
 }
 
