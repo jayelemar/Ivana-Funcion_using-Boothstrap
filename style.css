@@ -1,0 +1,49 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+body{
+    margin: 0 auto;
+    height: 800px;
+    background-color: grey;
+}
+img {
+    width: 200px;
+}
+
+h1, h2{
+    font-family:  'Comic Neue',sans-serif;
+}
+h1{
+    font-size: xxx-large;
+}
+h2{
+    font-size: x-large;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+/* header section */
+header{
+    background-image: linear-gradient(to right, #dfe7ec , #f3f6f8);
+}
+.info{
+    margin-left: 15px;
+}
+/* for tablet */
+@media only screen and (max-width: 640px){
+    .info{
+        display: block;
+        width: 100%;
+    }
+    .info-img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
